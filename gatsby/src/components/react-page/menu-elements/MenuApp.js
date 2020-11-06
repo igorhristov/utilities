@@ -3,11 +3,10 @@ import Menu from "./Menu"
 import Categories from "./Categories"
 import styled from "styled-components"
 
-import items from "./reactDataElements"
+// import items from "./reactDataElements"
 
-const allCategories = ["all", ...new Set(items.map(item => item.category))]
-
-function App() {
+function App({ data: items, title }) {
+  const allCategories = ["all", ...new Set(items.map(item => item.category))]
   const [menuItems, setMenuItems] = useState(items)
   const [categories, setCategories] = useState(allCategories)
 
@@ -24,7 +23,7 @@ function App() {
     <MainWrapper>
       <section className="menu section">
         <div className="title">
-          <h2>React Elements</h2>
+          <h2>{title} Elements</h2>
           <div className="underline"></div>
         </div>
         <Categories categories={categories} filterItems={filterItems} />
@@ -35,10 +34,11 @@ function App() {
 }
 
 const MainWrapper = styled.main`
-
   h2 {
     margin-bottom: 0.75rem;
-    color: #1F425E
+    color: #1f425e;
+    text-shadow: 0 4px 5px rgba(0,0,0,0.4);
+
   }
 
   .menu {

@@ -37,6 +37,9 @@ const Menu = ({ items }) => {
                   <Link to={urlLink} className="filter-btn">
                     Live
                   </Link>
+                  {/* <Link to={urlLink} className="filter-btn">
+                    source
+                  </Link> */}
                 </div>
               </article>
             )
@@ -49,19 +52,18 @@ const Menu = ({ items }) => {
 
 const MenuWrapper = styled.div`
   .filter-btn {
-    display: block;
-    width: 100%;
     border: none;
-    background-color: #380e3b;
-    color: #edca3f;
+    display: inline-block;
+    margin: 0 auto;
+    background-color: none;
+    color: #1F425E;
     font-size: 1.5rem;
+    /* font-weight: lighter; */
     cursor: pointer;
-    text-align: center;
-    transition: all 0.3s linear;
+    transition: all 0.25s linear;
   }
   .filter-btn:hover {
-    background: #edca3f;
-    color: #380e3b;
+    color: #380E3B;
   }
 
   img {
@@ -94,7 +96,6 @@ const MenuWrapper = styled.div`
     padding-bottom: 70%;
     background-size: cover;
     background-position: top center;
-    border-bottom: 5px solid #380e3b;
   }
   .card:hover {
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
@@ -104,17 +105,22 @@ const MenuWrapper = styled.div`
     padding: 0.71rem;
     color: #1f425e;
     flex: 1;
+    border-top: 3px solid #1F425E;
+    text-align: center;
+    font-weight: normal;
   }
   p {
     padding: 0.5rem;
     flex: 1;
   }
   .card-footer {
-    background: darkgray;
+    background: #49A6E9;
+    
     /* padding: 0.5rem 1rem; */
-    /* display: grid; */
+    display: flex;
     /* grid-template-columns: repeat(4, 1fr); */
-    /* justify-items: center; */
+    justify-items: space-around;
+    align-items: center;
   }
 
   /* .card-footer span {

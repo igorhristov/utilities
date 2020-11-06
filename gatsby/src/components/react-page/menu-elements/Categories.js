@@ -25,7 +25,11 @@ const Categories = ({ categories, filterItems }) => {
 const CategoriesWrapper = styled.div`
   .btn-container {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: stretch;
+    flex: 1;
+    flex-wrap: wrap;
   }
 
   .filter-btn {
@@ -36,7 +40,7 @@ const CategoriesWrapper = styled.div`
     margin: 0 0.5rem;
     letter-spacing: 1px;
     padding: 0.375rem 0.75rem;
-    color: #380E3B;
+    color: #380e3b;
     cursor: pointer;
     transition: all 0.3s linear;
     border-radius: 0.25rem;
