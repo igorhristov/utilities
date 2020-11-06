@@ -16,11 +16,11 @@ export const links = [
     url: '/htmlcss',
     text: 'htmlcss',
   },
-  {
-    id: 4,
-    url: '/javascript',
-    text: 'javascript',
-  },
+  // {
+  //   id: 4,
+  //   url: '/javascript',
+  //   text: 'javascript',
+  // },
   // {
   //   id: 5,
   //   url: '/profile',
