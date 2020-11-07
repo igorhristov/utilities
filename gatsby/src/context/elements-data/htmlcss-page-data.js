@@ -10,7 +10,7 @@ const items = [
     category: "Cards",
     img: card1,
     desc: `cards elements`,
-    urlLink: "/htmlcss/cards/card1/card1/",
+    urlLink: "/htmlcss/cards/card1/",
   },
 
   {
@@ -19,7 +19,7 @@ const items = [
     category: "Cards",
     img: card2,
     desc: `3 similar cards elements`,
-    urlLink: "/htmlcss/cards/card2/card2/",
+    urlLink: "/htmlcss/cards/card2/",
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const items = [
     category: "Forms",
     img: form1,
     desc: `form elements`,
-    urlLink: "/htmlcss/forms/form1/form",
+    urlLink: "/htmlcss/forms/form1/",
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ const items = [
     category: "Forms",
     img: form2,
     desc: `form elements`,
-    urlLink: "/htmlcss/forms/form2/form2",
+    urlLink: "/htmlcss/forms/form2/",
   },
   {
     id: 5,
@@ -43,7 +43,7 @@ const items = [
     category: "Cards",
     img: card3,
     desc: `Cards elements pricing`,
-    urlLink: "/htmlcss/cards/card3/card3",
+    urlLink: "/htmlcss/cards/card3/",
   },
 ]
 

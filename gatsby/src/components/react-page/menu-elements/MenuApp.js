@@ -8,7 +8,7 @@ import styled from "styled-components"
 function App({ data: items, title }) {
   const allCategories = ["all", ...new Set(items.map(item => item.category))]
   const [menuItems, setMenuItems] = useState(items)
-  const [categories, setCategories] = useState(allCategories)
+  const [categories] = useState(allCategories)
 
   const filterItems = category => {
     if (category === "all") {

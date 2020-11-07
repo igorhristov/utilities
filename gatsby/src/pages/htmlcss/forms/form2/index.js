@@ -40,35 +40,42 @@ const form2 = () => {
             <h2>create your account</h2>
             <div class="form-control">
               {/* <!-- input --> */}
-              <label for="email">email</label>
-              <input
-                type="email"
-                id="email"
-                class="form-input"
-                placeholder="enter your email"
-              />
+              <label for="email">
+                email
+                <input
+                  type="email"
+                  id="email"
+                  class="form-input"
+                  placeholder="enter your email"
+                />
+              </label>
             </div>
             {/* <!-- input --> */}
             <div class="form-control">
-              <label for="name">full name</label>
-              <input
-                type="text"
-                id="name"
-                class="form-input"
-                placeholder="enter your full name"
-              />
+              <label for="name">
+                full name
+                <input
+                  type="text"
+                  id="name"
+                  class="form-input"
+                  placeholder="enter your full name"
+                />
+              </label>
             </div>
             {/* <!-- input --> */}
             <div class="form-control">
-              <label for="password">password</label>
-              <input
-                type="password"
-                id="password"
-                class="form-input"
-                placeholder="type to create a password"
-              />
+              <label for="password">
+                password
+                <input
+                  type="password"
+                  id="password"
+                  class="form-input"
+                  placeholder="type to create a password"
+                />
+              </label>
             </div>
             <div class="updates">
+              
               <input type="checkbox" name="" id="" />
               <p>get udpates and notifications about our product</p>
             </div>
@@ -83,8 +90,8 @@ const form2 = () => {
 }
 
 const FormWrapper = styled.main`
-padding: 2rem;
-  background: #C5BDEB;
+  padding: 2rem;
+  background: #c5bdeb;
   /* background: "#c5bdeb;"; */
   /* color: hsl(209, 61%, 16%); */
   *,

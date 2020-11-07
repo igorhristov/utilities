@@ -17,25 +17,28 @@ const form = () => {
           </header>
           <form>
             <div class="form-control">
-              <label for="name">name</label>
-              <input
-                type="text"
-                id="name"
-                placeholder="UI Desing Daily"
-                class="form-input"
-              />
+              <label for="name">
+                name
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="UI Desing Daily"
+                  class="form-input"
+                />
+              </label>
             </div>
             <div class="form-control">
-              <label for="resource">Link to resource</label>
+              <label for="resource">Link to resource
               <input
                 type="text"
                 id="resource"
                 placeholder="https://www.uidesigndaily.com"
                 class="form-input"
               />
+              </label>
             </div>
             <div class="form-control">
-              <label for="category">Category</label>
+              <label for="category">Category
               <select id="category" class="form-input">
                 <option value="" selected disabled hidden>
                   select a category
@@ -44,6 +47,7 @@ const form = () => {
                 <option value="second">second category</option>
                 <option value="third">third category</option>
               </select>
+              </label>
             </div>
             <button class="submit-btn">submit</button>
           </form>
