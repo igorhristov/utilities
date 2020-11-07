@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import { FaAngleDoubleRight } from "react-icons/fa"
 import Layout from "../../../../components/layouts/layout"
 import styled from "styled-components"
@@ -70,7 +70,7 @@ function App() {
   // }
   // const { company, dates, duties, title } = jobs[value]
 
-  const [jobs, setJobs] = useState(experiences)
+  const [jobs] = useState(experiences)
   const [value, setValue] = useState(0)
   const { company, dates, duties, title } = jobs[value]
   return (

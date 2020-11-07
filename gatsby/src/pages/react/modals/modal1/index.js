@@ -206,7 +206,7 @@ Modal
 
 // import { useGlobalContext } from "./context"
 const Home = () => {
-  const { openSidebar, openModal } = useGlobalContext()
+  const { openModal } = useGlobalContext()
   return (
     <HomeWrapper>
       <main>
