@@ -15,6 +15,7 @@ import testemonial2 from "../../pages/react/testemonials/testemonial2/testemonia
 import modal1 from "../../pages/react/modals/modal1/modal1.png"
 
 import darkmode from "../../pages/react/projects/darkmode1/darkmode.png"
+import loremipsum from "../../pages/react/projects/loremipsum/loremipsum.png"
 
 
 const items = [
@@ -115,6 +116,15 @@ const items = [
     img: menu1,
     desc: `menu item with categories`,
     urlLink: "/react/menus/menu1/",
+  },
+
+  {
+    id: 13,
+    title: "Lorem Ipsum Generator",
+    category: "Projects",
+    img: loremipsum,
+    desc: `Generate Macedonian Lorem Ipsum or Generate Carl Sagan Quotes Lorem Ipsum`,
+    urlLink: "/react/projects/loremipsum/",
   },
 ]
 
