@@ -2,12 +2,12 @@ import navbar1 from "../../pages/react/navbars/navbar1/navbar1.png"
 import navbar2 from "../../pages/react/navbars/navbar2/navbar2.png"
 import navbar3 from "../../pages/react/navbars/navbar3/navbar3.png"
 
-
 import accordion1 from "../../pages/react/accordions/accordion1/accordion1.png"
 
 import tab1 from "../../pages/react/tabs/tab1/tab1.png"
+import tab2 from "../../pages/react/tabs/tab2/tab2.png"
 
-import menu1 from '../../pages/react/menus/menu1/menu.png'
+import menu1 from "../../pages/react/menus/menu1/menu.png"
 
 import testemonial1 from "../../pages/react/testemonials/testemonial1/testemonial1.png"
 import testemonial2 from "../../pages/react/testemonials/testemonial2/testemonial2.png"
@@ -16,7 +16,7 @@ import modal1 from "../../pages/react/modals/modal1/modal1.png"
 
 import darkmode from "../../pages/react/projects/darkmode1/darkmode.png"
 import loremipsum from "../../pages/react/projects/loremipsum/loremipsum.png"
-
+import quiz from "../../pages/react/projects/quiz/quiz.png"
 
 const items = [
   {
@@ -42,7 +42,7 @@ const items = [
     category: "Tabs",
     img: tab1,
     desc: `Accordion element`,
-    urlLink: "/react/tabs/tab1/App",
+    urlLink: "/react/tabs/tab1/",
   },
   {
     id: 5,
@@ -79,9 +79,6 @@ const items = [
     urlLink: "/react/navbars/navbar2/",
   },
 
-
- 
-
   {
     id: 10,
     title: "Modal",
@@ -108,7 +105,7 @@ const items = [
     desc: `Strapi Navbar element`,
     urlLink: "/react/navbars/navbar3/",
   },
-  
+
   {
     id: 12,
     title: "Restorant Menu",
@@ -125,6 +122,23 @@ const items = [
     img: loremipsum,
     desc: `Generate Macedonian Lorem Ipsum or Generate Carl Sagan Quotes Lorem Ipsum`,
     urlLink: "/react/projects/loremipsum/",
+  },
+
+  {
+    id: 14,
+    title: "Tabs 2",
+    category: "Tabs",
+    img: tab2,
+    desc: `Tab element`,
+    urlLink: "/react/tabs/tab2/",
+  },
+  {
+    id: 15,
+    title: "Quiz",
+    category: "Projects",
+    img: quiz,
+    desc: `quiz app`,
+    urlLink: "/react/projects/quiz/",
   },
 ]
 
