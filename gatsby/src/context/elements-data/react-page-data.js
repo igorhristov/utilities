@@ -17,6 +17,7 @@ import modal1 from "../../pages/react/modals/modal1/modal1.png"
 import darkmode from "../../pages/react/projects/darkmode1/darkmode.png"
 import loremipsum from "../../pages/react/projects/loremipsum/loremipsum.png"
 import quiz from "../../pages/react/projects/quiz/quiz.png"
+import markdown from "../../pages/react/projects/markdown/markdown.png"
 
 const items = [
   {
@@ -139,6 +140,14 @@ const items = [
     img: quiz,
     desc: `quiz app`,
     urlLink: "/react/projects/quiz/",
+  },
+  {
+    id: 16,
+    title: "Markdown",
+    category: "Projects",
+    img: markdown,
+    desc: `Markdown editor `,
+    urlLink: "/react/projects/markdown/",
   },
 ]
 
