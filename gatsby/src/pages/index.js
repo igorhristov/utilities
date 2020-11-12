@@ -2,11 +2,17 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 import Layout from "../components/layouts/layout"
+import Card from "../components/react-page/menu-elements/Card"
+import data from "../context/pages-data"
 
 const IndexPage = () => (
   <Layout>
     <HomePageWrapper>
-      <h1>home page</h1>
+      {data.map((menuItem, ix) => {
+        const { id, title, img, desc, urlLink, category } = menuItem
+        return <Card {...{ id, title, img, desc, urlLink, category }} />
+      })}
+      {/* <h1>home page</h1>
       <div className="project-dirs">
         <h2>
           <Link to="/react">react Projects</Link>
@@ -14,13 +20,20 @@ const IndexPage = () => (
         <h2>
           <Link to="/htmlcss">HTML/CSS Projects</Link>
         </h2>
-      </div>
+      </div> */}
     </HomePageWrapper>
   </Layout>
 )
 
 const HomePageWrapper = styled.section`
-  padding: 3rem;
+  min-height: calc(100vh - 249px);
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
+  grid-column-gap: 2rem;
+  grid-row-gap: 3rem;
+  margin: 3rem auto;
+  /* padding: 3rem;
   text-align: center;
   background: #f1f5f8;
   height: 85vh;
@@ -55,7 +68,7 @@ box-shadow: 0 4px 5px rgba(0,0,0,0.4);
   }
   a:hover {
     color: #49a6e9;
-  }
+  } */
 `
 
 export default IndexPage
