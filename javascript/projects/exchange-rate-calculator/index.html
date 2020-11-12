@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Recursive&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Exchange Rate Calculator JavaScript App</title>
+  </head>
+  <body>
+    <img
+      class="money-img"
+      src="https://www.iconhot.com/icon/png/web/256/wallet-14.png"
+    />
+    <h1>Exchange Rate Calculator</h1>
+    <p>Choose the currency and the amounts to get the exchange rate</p>
+
+    <div class="container">
+      <div class="currency">
+        <select id="currency-one">
+          <option value="USD" selected>USD</option>
+          <option value="AUD">AUD</option>
+          <option value="EUR">EUR</option>
+          <option value="CAD">CAD</option>
+          <option value="CHF">CHF</option>
+          <option value="GBP">GBP</option>
+        </select>
+        <input type="number" id="amount-one" placeholder="0" value="10" />
+      </div>
+
+      <div class="swap-rate-container">
+        <button class="btn" id="swap">Swap</button>
+        <div class="rate" id="rate"></div>
+      </div>
+
+      <div class="currency">
+        <select id="currency-two">
+          <option value="USD">USD</option>
+          <option value="AUD">AUD</option>
+          <option value="EUR" selected>EUR</option>
+          <option value="CAD">CAD</option>
+          <option value="CHF">CHF</option>
+          <option value="GBP">GBP</option>
+        </select>
+        <input type="number" id="amount-two" placeholder="0" />
+      </div>
+      <div class="mkd">MKD: <span id="mkd"></span></div>
+
+      <div class="date"><span id="date"></span></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
