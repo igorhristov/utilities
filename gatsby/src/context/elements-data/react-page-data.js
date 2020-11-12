@@ -50,7 +50,7 @@ const items = [
     title: "Testemonial1",
     category: "Testemonials",
     img: testemonial1,
-    desc: `Revie element for react`,
+    desc: `Review element for react`,
     urlLink: "/react/testemonials/testemonial1/",
   },
   {
@@ -58,18 +58,18 @@ const items = [
     title: "Testemonial2",
     category: "Testemonials",
     img: testemonial2,
-    desc: `Revie element for react`,
+    desc: `Review element for react`,
     urlLink: "/react/testemonials/testemonial2/",
   },
 
-  {
-    id: 7,
-    title: "Testemonial2 v2",
-    category: "Testemonials",
-    img: testemonial2,
-    desc: `Revie element for react`,
-    urlLink: "/react/testemonials/testemonial2/Alternative",
-  },
+  // {
+  //   id: 7,
+  //   title: "Testemonial2 v2",
+  //   category: "Testemonials",
+  //   img: testemonial2,
+  //   desc: `Review element for react`,
+  //   urlLink: "/react/testemonials/testemonial2/Alternative",
+  // },
 
   {
     id: 8,
