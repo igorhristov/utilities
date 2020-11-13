@@ -13,7 +13,7 @@ const items = [
     category: "Pages",
     img:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRJrRfrF329fKNxX5DAxPNO2EXiLmMyl54PrA&usqp=CAU",
-    desc: `JavasSript Applications with JavaScript HTML5 and CSS3`,
+    desc: `JavaScript HTML5 and CSS3`,
     urlLink: "/javascript",
   },
   {
