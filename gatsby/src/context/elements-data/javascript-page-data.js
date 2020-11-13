@@ -2,6 +2,7 @@ import todo from '../../images/javascript/todo.png'
 import StickyNavbar from '../../images/javascript/sticky-navbar.png'
 import ExchangeRateCalculator from '../../images/javascript/exchange-rate.jpg'
 import FormValidator from '../../images/javascript/form-validator.png'
+import SliderModal from '../../images/javascript/slider-modal.jpg'
 const items = [
   {
     id: 1,
@@ -28,12 +29,20 @@ const items = [
     urlLink: "https://igor-javascript-exchange-rate.netlify.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Form Validator",
     category: "Forms",
     img: FormValidator,
     desc: `Validation for form`,
     urlLink: "https://igor-javascript-form-validator.netlify.app/",
+  },
+  {
+    id: 5,
+    title: "Slider & Modal",
+    category: "Modal",
+    img: SliderModal,
+    desc: `Slider with Modal elements`,
+    urlLink: "https://igor-javascript-slider-modal.netlify.app/",
   },
   
 ]
