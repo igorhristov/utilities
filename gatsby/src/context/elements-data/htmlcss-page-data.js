@@ -3,6 +3,9 @@ import card2 from "../../pages/htmlcss/cards/card2/card2.png"
 import card3 from "../../pages/htmlcss/cards/card3/card3.png"
 import form1 from "../../pages/htmlcss/forms/form1/form1.png"
 import form2 from "../../pages/htmlcss/forms/form2/form2.png"
+import footer1 from "../../pages/htmlcss/footers/footer1/footer1.png"
+import dropdown from "../../pages/htmlcss/navbars/dropdown/dropdown.jpg"
+
 const items = [
   {
     id: 1,
@@ -44,6 +47,22 @@ const items = [
     img: card3,
     desc: `Cards elements pricing`,
     urlLink: "/htmlcss/cards/card3/",
+  },
+  {
+    id: 6,
+    title: "Footer",
+    category: "Footers",
+    img: footer1,
+    desc: `Footer element with html and css`,
+    urlLink: "/htmlcss/footers/footer1/",
+  },
+  {
+    id: 7,
+    title: "Dropdown",
+    category: "Navbars",
+    img: dropdown,
+    desc: `Dropdown Element `,
+    urlLink: "/htmlcss/navbars/dropdown/",
   },
 ]
 
