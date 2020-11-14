@@ -3,6 +3,7 @@ import StickyNavbar from '../../images/javascript/sticky-navbar.png'
 import ExchangeRateCalculator from '../../images/javascript/exchange-rate.jpg'
 import FormValidator from '../../images/javascript/form-validator.png'
 import SliderModal from '../../images/javascript/slider-modal.jpg'
+import Accordion from '../../images/javascript/accordion.jpg'
 const items = [
   {
     id: 1,
@@ -43,6 +44,15 @@ const items = [
     img: SliderModal,
     desc: `Slider with Modal elements`,
     urlLink: "https://igor-javascript-slider-modal.netlify.app/",
+  },
+
+  {
+    id: 6,
+    title: "Accordion",
+    category: "Accordions",
+    img: Accordion,
+    desc: `Accordion basic element`,
+    urlLink: "https://igor-javascript-accordion.netlify.app/",
   },
   
 ]
