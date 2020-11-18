@@ -23,11 +23,13 @@ const HomePageWrapper = styled.section`
   min-height: calc(100vh - 200px);
   padding: 2rem;
   margin-top: 50px;
+
   .cards-center {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
-    grid-column-gap: 2rem;
-    grid-row-gap: 3rem;
+    display: flex;
+    margin: 4rem auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3.4rem 1.5rem;
   }
   .section {
     width: 90vw;
