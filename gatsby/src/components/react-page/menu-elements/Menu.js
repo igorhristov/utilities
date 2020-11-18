@@ -19,11 +19,14 @@ const Menu = ({ items }) => {
 
 const MenuWrapper = styled.div`
   .cards-center {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
-    grid-column-gap: 2rem;
-    grid-row-gap: 3rem;
-    margin: 3rem auto;
+    display: flex;
+
+    margin: 4.5rem 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3.9rem 1.5rem;
+
+    min-height: 56vh;
   }
 `
 

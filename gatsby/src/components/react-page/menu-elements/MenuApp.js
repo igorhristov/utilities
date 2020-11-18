@@ -35,7 +35,7 @@ function App({ data: items, title }) {
 
 const MainWrapper = styled.main`
   h2 {
-    margin-bottom: 0.75rem;
+    margin: 2.5rem auto 1.5rem;
     color: #1f425e;
     text-shadow: 0 4px 5px rgba(0,0,0,0.4);
 
@@ -43,6 +43,7 @@ const MainWrapper = styled.main`
 
   .menu {
     padding: 1rem 0;
+    /* min-height: 100vh; */
   }
 
   .title {
@@ -50,6 +51,7 @@ const MainWrapper = styled.main`
     margin-bottom: 0.5rem;
   }
   .underline {
+    margin: 10px auto 20px;
     width: 5rem;
     height: 0.25rem;
     background: #edca3f;

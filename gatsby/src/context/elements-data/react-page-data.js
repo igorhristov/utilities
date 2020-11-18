@@ -121,7 +121,7 @@ const items = [
     title: "Lorem Ipsum Generator",
     category: "Projects",
     img: loremipsum,
-    desc: ` Macedonian || Sagan Quotes Lorem Ipsum`,
+    desc: `Macedonian lorem ipsum || Carl Sagan Quotes Lorem Ipsum `,
     urlLink: "/react/projects/loremipsum/",
   },
 

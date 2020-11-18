@@ -26,16 +26,14 @@ const Card = ({ id, category, title, desc, urlLink, img, className }) => {
           style={{
             backgroundImage: `url(${img})`,
             backgroundRepeat: "no-repeat",
-            backgroundSize: 'cover'
+            backgroundSize: "cover",
           }}
         ></div>
         <h3>{title}</h3>
 
         <p>{desc}</p>
         <div class="card-footer">
-          <Link to={urlLink} className="filter-btn">
-            Live
-          </Link>
+          <Link to={urlLink}>Live</Link>
         </div>
       </article>
     </div>
@@ -43,44 +41,11 @@ const Card = ({ id, category, title, desc, urlLink, img, className }) => {
 }
 
 export default styled(Card)`
-  .filter-btn {
-    border: none;
-    display: inline-block;
-    margin: 0 auto;
-    background-color: none;
-    color: #1f425e;
-    font-size: 1.5rem;
-    /* font-weight: lighter; */
-    cursor: pointer;
-    transition: all 0.25s linear;
-  }
-  .filter-btn:hover {
-    color: #380e3b;
-  }
-
-  img {
-    width: 100%;
-    display: block;
-  }
-
-  .title {
-    text-align: center;
-  }
-
-  .cards-center {
-    margin: 3rem auto;
-  }
   .card {
+    width: 33.33333vh;
     background: white;
-    -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
-      5px 5px 15px 5px rgba(0, 0, 0, 0);
-    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000,
-      5px 5px 15px 5px rgba(0, 0, 0, 0);
-    display: flex;
-    flex-direction: column;
     color: #444;
     transition: all 0.1s ease-in;
-    /* border: 1px solid #380e3b; */
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.7);
   }
 
@@ -94,40 +59,43 @@ export default styled(Card)`
   }
 
   h3 {
-    padding: 0.71rem;
+    padding: 0.71rem 0;
+    margin: 0;
     color: #1f425e;
-    flex: 1;
     border-top: 3px solid #1f425e;
     text-align: center;
     font-weight: normal;
+    min-height: 9vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
   }
   p {
-    padding: 0.5rem;
-    flex: 1;
+    padding: 0 0.4rem 0.2rem;
+    min-height: 6vh;
+    display: flex;
+    align-items: flex-end;
+    text-align: start;
+    font-size: 16px;
   }
   .card-footer {
     background: #49a6e9;
-
-    /* padding: 0.5rem 1rem; */
-    display: flex;
-    /* grid-template-columns: repeat(4, 1fr); */
-    justify-items: space-around;
-    align-items: center;
+    text-align: center;
+    
   }
 
-  /* .card-footer span {
-    color: var(--primaryColor);
-  } */
-
-  .card {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
+  a {
+    display: inline-block;
+    background-color: none;
+    color: #1f425e;
+    font-size: 1.5rem;
+    width: 100%;
+    transition: all 0.25s linear;
+    text-transform: uppercase;
   }
-  .cards-center {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
-    grid-column-gap: 2rem;
-    grid-row-gap: 3rem;
+
+  a:hover {
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
   }
 `
