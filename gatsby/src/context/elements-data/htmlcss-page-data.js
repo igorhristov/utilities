@@ -5,8 +5,17 @@ import form1 from "../../pages/htmlcss/forms/form1/form1.png"
 import form2 from "../../pages/htmlcss/forms/form2/form2.png"
 import footer1 from "../../pages/htmlcss/footers/footer1/footer1.png"
 import dropdown from "../../pages/htmlcss/navbars/dropdown/dropdown.jpg"
+import mobile from "../../images/htmlcss/mobile.jpg"
 
 const items = [
+  {
+    id: 8,
+    title: "Flexbox Mobile App",
+    category: "Projects",
+    img: mobile,
+    desc: `Flexbox Mobile App make with HTML5, CSS3, Flexbox`,
+    urlLink: "https://igor-htmlcss-flexbox-mobile.netlify.app/",
+  },
   {
     id: 1,
     title: "Card 1",

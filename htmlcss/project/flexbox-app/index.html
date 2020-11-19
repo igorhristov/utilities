@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Mobile FlexBox App</title>
+  </head>
+  <body>
+    <div class="app-wrap">
+      <header class="app-header">
+        <a href="https://igor-utility.netlify.app/htmlcss/" class="button">
+          <i class="fa fa-arrow-left"></i>
+          back
+        </a>
+        <h1>Mobile FlexBox App</h1>
+        <a href="#"><i class="fa fa-cog"></i></a>
+      </header>
+
+      <div class="content">
+        <h2>Why Flexbox?</h2>
+        <p>
+          For a long time, the only reliable cross browser-compatible tools
+          available for creating CSS layouts were things like floats and
+          positioning. These are fine, and they work, but in some ways they are
+          also rather limiting and frustrating.
+        </p>
+        <p>
+          The following simple layout requirements are either difficult or
+          impossible to achieve with such tools, in any kind of convenient,
+          flexible way:
+        </p>
+        <ul>
+          <li>Vertically centering a block of content inside its parent.</li>
+          <li>
+            Making all the children of a container take up an equal amount of
+            the available width/height, regardless of how much width/height is
+            available.
+          </li>
+          <li>
+            Making all columns in a multiple-column layout adopt the same height
+            even if they contain a different amount of content.
+          </li>
+        </ul>
+        <p>
+          As you'll see in subsequent sections, flexbox makes a lot of layout
+          tasks much easier. Let's dig in!
+        </p>
+        <h2>The flex model</h2>
+        <p>
+          When elements are laid out as flex items, they are laid out along two
+          axes:
+        </p>
+        <img
+          src="https://media.prod.mdn.mozit.cloud/attachments/2012/07/09/3739/97750afee8f091f8b82864be884a3695/flex_terms.png"
+          alt="flexbox"
+        />
+        <ul>
+          <li>
+            The main axis is the axis running in the direction the flex items
+            are being laid out in e.g. as rows across the page, or columns down
+            the page. The start and end of this axis are called the main start
+            and main end.
+          </li>
+          <li>
+            The cross axis is the axis running perpendicular to the direction
+            the flex items are being laid out in. The start and end of this axis
+            are called the cross start and cross end.
+          </li>
+          <li>
+            The parent element that has display: flex set on it the section in
+            our example is called the flex container.
+          </li>
+          <li>
+            The items being laid out as flexible boxes inside the flex container
+            are called flex items
+          </li>
+        </ul>
+
+        <img
+          src="https://css-tricks.com/wp-content/uploads/2018/11/00-basic-terminology.svg"
+          alt=""
+        />
+        <p>
+          If “regular” layout is based on both block and inline flow directions,
+          the flex layout is based on “flex-flow directions”. Please have a look
+          at this figure from the specification, explaining the main idea behind
+          the flex layout.
+        </p>
+        <h2>Properties for the Parent <br />(flex container)</h2>
+
+        <h3>flex-direction</h3>
+        <img
+          src="https://css-tricks.com/wp-content/uploads/2018/10/flex-direction.svg"
+          alt=""
+        />
+        <p>
+          This establishes the main-axis, thus defining the direction flex items
+          are placed in the flex container. Flexbox is (aside from optional
+          wrapping) a single-direction layout concept. Think of flex items as
+          primarily laying out either in horizontal rows or vertical columns.
+        </p>
+        <h3>flex-wrap</h3>
+        <img
+          src="https://css-tricks.com/wp-content/uploads/2018/10/flex-wrap.svg"
+          alt=""
+        />
+        <p>
+          By default, flex items will all try to fit onto one line. You can
+          change that and allow the items to wrap as needed with this property.
+        </p>
+        <br />
+        <ul>
+          <li>nowrap (default): all flex items will be on one line</li>
+          <li>
+            wrap: flex items will wrap onto multiple lines, from top to bottom.
+          </li>
+          <li>
+            wrap-reverse: flex items will wrap onto multiple lines from bottom
+            to top.
+          </li>
+        </ul>
+        <h3>justify-content</h3>
+        <img
+          src="https://css-tricks.com/wp-content/uploads/2018/10/justify-content.svg"
+          alt=""
+        />
+        <p>
+          This defines the alignment along the main axis. It helps distribute
+          extra free space leftover when either all the flex items on a line are
+          inflexible, or are flexible but have reached their maximum size. It
+          also exerts some control over the alignment of items when they
+          overflow the line.
+        </p>
+
+        <ul style="clear: both">
+          <li>
+            flex-start (default): items are packed toward the start of the
+            flex-direction.
+          </li>
+          <li>
+            flex-end: items are packed toward the end of the flex-direction.
+          </li>
+          <li>
+            start: items are packed toward the start of the writing-mode
+            direction.
+          </li>
+          <li>
+            end: items are packed toward the end of the writing-mode direction.
+          </li>
+          <li>
+            left: items are packed toward left edge of the container, unless
+            that doesn’t make sense with the flex-direction, then it behaves
+            like start
+          </li>
+          <li>
+            right: items are packed toward right edge of the container, unless
+            that doesn’t make sense with the flex-direction, then it behaves
+            like start.
+          </li>
+          <li>center: items are centered along the line</li>
+          <li>
+            space-between: items are evenly distributed in the line; first item
+            is on the start line, last item on the end line
+          </li>
+          <li>
+            space-around: items are evenly distributed in the line with equal
+            space around them. Note that visually the spaces aren’t equal, since
+            all the items have equal space on both sides. The first item will
+            have one unit of space against the container edge, but two units of
+            space between the next item because that next item has its own
+            spacing that applies.
+          </li>
+          <li>
+            space-evenly: items are distributed so that the spacing between any
+            two items (and the space to the edges) is equal.
+          </li>
+        </ul>
+        <h2>
+          Properties for the Children <br />
+          (flex items)
+        </h2>
+        <h3>order</h3>
+        <img
+          src="https://css-tricks.com/wp-content/uploads/2018/10/order.svg"
+          alt=""
+        />
+        <p>
+          By default, flex items are laid out in the source order. However, the
+          order property controls the order in which they appear in the flex
+          container.
+        </p>
+        <h3 style="clear: both">flex-grow</h3>
+        <img
+          src="https://css-tricks.com/wp-content/uploads/2018/10/flex-grow.svg"
+          alt=""
+        />
+        <p>
+          This defines the ability for a flex item to grow if necessary. It
+          accepts a unitless value that serves as a proportion. It dictates what
+          amount of the available space inside the flex container the item
+          should take up.
+        </p>
+        <p>
+          If all items have flex-grow set to 1, the remaining space in the
+          container will be distributed equally to all children. If one of the
+          children has a value of 2, the remaining space would take up twice as
+          much space as the others (or it will try to, at least). <br />
+          Negative numbers are invalid.
+        </p>
+
+        <h3>flex-shrink</h3>
+        <p>This defines the ability for a flex item to shrink if necessary.</p>
+        <h3>flex-basis</h3>
+        <p>
+          This defines the default size of an element before the remaining space
+          is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a
+          keyword. The auto keyword means “look at my width or height property”
+          (which was temporarily done by the main-size keyword until
+          deprecated). The content keyword means “size it based on the item’s
+          content” – this keyword isn’t well supported yet, so it’s hard to test
+          and harder to know what its brethren max-content, min-content, and
+          fit-content do.
+        </p>
+
+        <h3>flex</h3>
+        <p>
+          This is the shorthand for flex-grow, flex-shrink and flex-basis
+          combined. The second and third parameters (flex-shrink and flex-basis)
+          are optional. The default is 0 1 auto, but if you set it with a single
+          number value, it’s like 1 0.
+        </p>
+
+        <h3>align-self</h3>
+        <img
+          src="https://css-tricks.com/wp-content/uploads/2018/10/align-self.svg"
+          alt=""
+        />
+        <p>
+          This allows the default alignment (or the one specified by
+          align-items) to be overridden for individual flex items.
+        </p>
+      </div>
+
+      <div class="icon-bar">
+        <a href="https://igor-utility.netlify.app/">
+          <i class="fa fa-home"> </i>
+          Home
+        </a>
+        <a href="https://igor-utility.netlify.app/javascript">
+          <i class="fab fa-js"> </i>
+          Javascript
+        </a>
+        <a href="https://igor-utility.netlify.app/react">
+          <i class="fab fa-react"> </i>
+          React
+        </a>
+        <a href="https://igorhristov.me/">
+          <i class="fa fa-user"> </i>
+          Me
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
