@@ -21,6 +21,14 @@ import markdown from "../../pages/react/projects/markdown/markdown.png"
 
 const items = [
   {
+    id: 15,
+    title: "Quiz",
+    category: "Projects",
+    img: quiz,
+    desc: `quiz app`,
+    urlLink: "/react/projects/quiz/",
+  },
+  {
     id: 1,
     title: "Navbar 1",
     category: "Navbars",
@@ -133,14 +141,7 @@ const items = [
     desc: `Tab element`,
     urlLink: "/react/tabs/tab2/",
   },
-  {
-    id: 15,
-    title: "Quiz",
-    category: "Projects",
-    img: quiz,
-    desc: `quiz app`,
-    urlLink: "/react/projects/quiz/",
-  },
+
   {
     id: 16,
     title: "Markdown",

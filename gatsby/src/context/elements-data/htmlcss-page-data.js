@@ -6,6 +6,7 @@ import form2 from "../../pages/htmlcss/forms/form2/form2.png"
 import footer1 from "../../pages/htmlcss/footers/footer1/footer1.png"
 import dropdown from "../../pages/htmlcss/navbars/dropdown/dropdown.jpg"
 import mobile from "../../images/htmlcss/mobile.jpg"
+import glassdesign from "../../images/htmlcss/glassdesign.jpg"
 
 const items = [
   {
@@ -13,8 +14,16 @@ const items = [
     title: "Flexbox Mobile App",
     category: "Projects",
     img: mobile,
-    desc: `Flexbox Mobile App make with HTML5, CSS3, Flexbox`,
+    desc: `Mobile App designed with HTML5, CSS3, Flexbox and Font Awesome icons`,
     urlLink: "https://igor-htmlcss-flexbox-mobile.netlify.app/",
+  },
+  {
+    id: 9,
+    title: "Glass Design",
+    category: "Projects",
+    img: glassdesign,
+    desc: `Website designed with HTML5, CSS3, Flexbox for glass design feel`,
+    urlLink: "https://igor-glass-design.netlify.app/",
   },
   {
     id: 1,
