@@ -3,3 +3,28 @@
   padding: 25rem 0;
   margin-top: -15vh;
 }
+
+.section-features {
+  background-color: $persian-green;
+  padding: 20rem 0;
+
+  background-image: linear-gradient(
+      180deg,
+      rgba($charcoal, 0.84),
+      rgba($persian-green, 0.87),
+      rgba($orange-yellow-crayola, 0.91),
+      rgba($sandy-brown, 0.93),
+      rgba($burnt-sienna, 0.95)
+    ),
+    url("https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1000");
+  background-size: cover;
+  background-position: center;
+  // margin-top: -6rem;
+
+  transform: skewY(-7deg) translateY(-6rem);
+
+  // select direct > children only
+  & > * {
+    transform: skewY(7deg);
+  }
+}
