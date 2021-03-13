@@ -1,0 +1,30 @@
+  body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: $charcoal;
+  }
+  
+  .heading-primary {
+    color: $charcoal;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+  
+    &--main {
+      animation: moveInLeft 1s ease;
+      display: block;
+      font-size: 6rem;
+      font-weight: 600;
+      letter-spacing: 3.5rem;
+    }
+  
+    &--sub {
+      animation: moveInRight 1s ease;
+      display: block;
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: 1.3rem;
+    }
+  }
+  
