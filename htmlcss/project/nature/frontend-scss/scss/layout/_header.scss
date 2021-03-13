@@ -1,0 +1,38 @@
+.header {
+    height: 95vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba($charcoal, 0.99),
+        rgba($persian-green, 0.95),
+        rgba($orange-yellow-crayola, 0.91),
+        rgba($sandy-brown, 0.85),
+        rgba($burnt-sienna, 0.81)
+      ),
+      url("https://images.pexels.com/photos/2770933/pexels-photo-2770933.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1000");
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  
+    &__logo-box {
+      position: absolute;
+      top: 4rem;
+      left: 4rem;
+    }
+  
+    &__logo {
+      height: 3.5rem;
+      border-radius: 0.5rem;
+  
+      &:hover {
+        animation: rotate360 1s ease;
+      }
+    }
+  
+    &__text-box {
+      left: 50%;
+      position: absolute;
+      text-align: center;
+      top: 47%;
+      transform: translate(-50%, -50%);
+    }
+  }

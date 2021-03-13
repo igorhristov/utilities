@@ -1,0 +1,14 @@
+{
+  "name": "nature",
+  "version": "1.0.0",
+  "description": "nature website build with scss",
+  "main": "index.js",
+  "scripts": {
+    "compile:scss": "node-sass scss/main.scss assets/style.css -w"
+  },
+  "author": "Igor Hristov",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
