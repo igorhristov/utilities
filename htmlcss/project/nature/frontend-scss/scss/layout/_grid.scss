@@ -1,6 +1,5 @@
 .row {
   max-width: $grid-width;
-  background-color: purple;
   margin: 0 auto;
 
   //select everything exept last item from rows
@@ -11,7 +10,6 @@
   @include clearfix;
 
   [class^="col-"] {
-    background-color: red;
     float: left;
 
     &:not(:last-child) {

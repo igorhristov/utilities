@@ -11,7 +11,7 @@
       url("https://images.pexels.com/photos/2770933/pexels-photo-2770933.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1000");
     background-size: cover;
     background-position: center;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
   
     &__logo-box {
       position: absolute;
