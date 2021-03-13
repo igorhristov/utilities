@@ -1,30 +1,59 @@
-  body {
-    font-family: "Montserrat", sans-serif;
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: $charcoal;
+  padding: 2rem;
+}
+
+.heading-primary {
+  color: $charcoal;
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+
+  &--main {
+    animation: moveInLeft 1s ease;
+    display: block;
+    font-size: 6rem;
+    font-weight: 600;
+    letter-spacing: 3.5rem;
+  }
+
+  &--sub {
+    animation: moveInRight 1s ease;
+    display: block;
+    font-size: 2rem;
     font-weight: 400;
-    line-height: 1.6;
-    color: $charcoal;
+    letter-spacing: 1.3rem;
   }
-  
-  .heading-primary {
-    color: $charcoal;
-    text-transform: uppercase;
-    backface-visibility: hidden;
-    margin-bottom: 6rem;
-  
-    &--main {
-      animation: moveInLeft 1s ease;
-      display: block;
-      font-size: 6rem;
-      font-weight: 600;
-      letter-spacing: 3.5rem;
-    }
-  
-    &--sub {
-      animation: moveInRight 1s ease;
-      display: block;
-      font-size: 2rem;
-      font-weight: 400;
-      letter-spacing: 1.3rem;
-    }
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  font-weight: 600;
+  display: inline-block;
+  background-image: linear-gradient(to right, $persian-green, $charcoal);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: skewY(2deg) skewX(2deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba($clr-black, 0.2);
   }
-  
+}
+
+.heading-tertiary {
+  font-size: $default-font-size;
+  font-weight: 600;
+}
+
+.paragraph {
+  font-size: $default-font-size;
+  &:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+}

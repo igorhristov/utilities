@@ -3,12 +3,11 @@
   &:visited {
     border-radius: 10rem;
     display: inline-block;
-    font-size: 1.6rem;
+    font-size: $default-font-size;
     font-weight: 600;
     padding: 1.5rem 4rem;
     position: relative;
     text-decoration: none;
-    text-transform: uppercase;
     transition: all 0.25s ease;
   }
 
@@ -51,5 +50,30 @@
   &--animated {
     animation: moveInBottom 1s ease-out 0.75s;
     animation-fill-mode: backwards;
+  }
+}
+
+.btn-text {
+  &:link,
+  &:visited {
+    color: $charcoal;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $charcoal;
+    padding: 3px;
+    font-size: $default-font-size;
+    transition: all .2s;
+  }
+
+  &:hover {
+    background-color: $charcoal;
+    color: $clr-white;
+    box-shadow: 0 1rem 2rem rgba($clr-black, 0.15);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    box-shadow: 0 .5rem 1rem rgba($clr-black, 0.15);
+    transform: translateY(0);
   }
 }
