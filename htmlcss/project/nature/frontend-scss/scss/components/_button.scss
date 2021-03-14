@@ -28,9 +28,17 @@
 
   &--white {
     background-color: $clr-white;
-    color: $charcoal;
+    color: $burnt-sienna;
     &::after {
       background-color: $clr-white;
+    }
+  }
+
+  &--green {
+    background-color: $persian-green;
+    color: $clr-white;
+    &::after {
+      background-color: $persian-green;
     }
   }
 

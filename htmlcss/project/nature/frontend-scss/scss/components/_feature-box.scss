@@ -18,6 +18,7 @@
       $orange-yellow-crayola,
       $burnt-sienna
     );
+    -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
   }

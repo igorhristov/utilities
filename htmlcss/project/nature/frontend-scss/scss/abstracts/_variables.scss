@@ -7,6 +7,7 @@ $burnt-sienna: #e76f51ff;
 $clr-white: #fff;
 $clr-black: #000;
 $clr-grey-light-1: #f7f7f7;
+$clr-grey-light-2: #eee;
 $clr-grey-dark: #777;
 
 $rgba-charcoal: rgba(38, 70, 83, 1);
@@ -14,6 +15,23 @@ $rgba-green: rgba(42, 157, 143, 1);
 $rgba-yellow-crayola: rgba(233, 196, 106, 1);
 $rgba-brown: rgba(244, 162, 97, 1);
 $rgba-sienna: rgba(231, 111, 81, 1);
+// card colors
+$card-2-gradient: linear-gradient(
+    to right bottom,
+    $burnt-sienna,
+    $sandy-brown
+  );
+$card-1-gradient: linear-gradient(
+    to left top,
+    $charcoal,
+    $persian-green
+  );
+
+  $card-3-gradient: linear-gradient(
+    to left bottom,
+    $persian-green,
+    $orange-yellow-crayola
+  );
 
 //FONT
 $default-font-size: 1.6rem;

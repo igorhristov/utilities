@@ -107,6 +107,12 @@ body {
 .mb-big {
   margin-bottom: 8rem; }
 
+.mt-big {
+  margin-top: 8rem; }
+
+.mt-huge {
+  margin-top: 10rem; }
+
 .btn:link, .btn:visited {
   border-radius: 10rem;
   display: inline-block;
@@ -130,9 +136,15 @@ body {
 
 .btn--white {
   background-color: #fff;
-  color: #264653ff; }
+  color: #e76f51ff; }
   .btn--white::after {
     background-color: #fff; }
+
+.btn--green {
+  background-color: #2a9d8fff;
+  color: #fff; }
+  .btn--green::after {
+    background-color: #2a9d8fff; }
 
 .btn::after {
   border-radius: 10rem;
@@ -168,6 +180,101 @@ body {
 .btn-text:active {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
+
+.card {
+  perspective: 150rem;
+  -moz-perspective: 500rem;
+  position: relative;
+  height: 52rem; }
+  .card__side {
+    height: 52rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+    .card__side--front {
+      background-color: #fff; }
+    .card__side--back {
+      transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to left top, #264653ff, #2a9d8fff); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right bottom, #e76f51ff, #f4a261ff); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to left bottom, #2a9d8fff, #e9c46aff); }
+  .card:hover .card__side--front {
+    transform: rotateY(-180deg); }
+  .card:hover .card__side--back {
+    transform: rotateY(0); }
+  .card__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    --webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; }
+    .card__picture--1 {
+      background-image: linear-gradient(to left top, #264653ff, #2a9d8fff), url("https://images.pexels.com/photos/38537/woodland-road-falling-leaf-natural-38537.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"); }
+    .card__picture--2 {
+      background-image: linear-gradient(to right bottom, #e76f51ff, #f4a261ff), url("https://images.pexels.com/photos/34950/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=750&w=1260"); }
+    .card__picture--3 {
+      background-image: linear-gradient(to left bottom, #2a9d8fff, #e9c46aff), url("https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"); }
+  .card__heading {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    text-align: right;
+    font-weight: 300;
+    color: #fff;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%; }
+  .card__heading-span {
+    padding: 1rem 1.5rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone; }
+    .card__heading-span--1 {
+      background-image: linear-gradient(to left top, #264653ff, #2a9d8fff); }
+    .card__heading-span--2 {
+      background-image: linear-gradient(to right bottom, #e76f51ff, #f4a261ff); }
+    .card__heading-span--3 {
+      background-image: linear-gradient(to left bottom, #2a9d8fff, #e9c46aff); }
+  .card__details {
+    padding: 3rem; }
+    .card__details ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto; }
+      .card__details ul li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem; }
+        .card__details ul li:not(:last-child) {
+          border-bottom: 1px solid #eee; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center; }
+  .card__price-box {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 8rem; }
+  .card__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase; }
+  .card__price-value {
+    font-size: 6rem;
+    font-weight: 100; }
 
 .composition {
   position: relative; }
@@ -210,6 +317,7 @@ body {
     margin-bottom: 2rem;
     display: inline-block;
     background-image: linear-gradient(to right, #e9c46aff, #e76f51ff);
+    -webkit-background-clip: text;
     background-clip: text;
     color: transparent; }
   .feature-box:hover {
@@ -275,7 +383,7 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 25rem 0;
+  padding: 25rem 0 30rem 0;
   margin-top: -15vh; }
 
 .section-features {
@@ -284,6 +392,12 @@ body {
   background-image: linear-gradient(180deg, rgba(38, 70, 83, 0.84), rgba(42, 157, 143, 0.87), rgba(233, 196, 106, 0.91), rgba(244, 162, 97, 0.93), rgba(231, 111, 81, 0.95)), url("https://images.pexels.com/photos/814499/pexels-photo-814499.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1000");
   background-size: cover;
   background-position: center;
-  transform: skewY(-7deg) translateY(-6rem); }
+  margin-top: -6rem;
+  transform: skewY(-7deg) translateY(-8rem); }
   .section-features > * {
     transform: skewY(7deg); }
+
+.section-tours {
+  background-color: #f7f7f7;
+  padding: 25rem 0 20rem 0;
+  margin-top: -16rem; }
