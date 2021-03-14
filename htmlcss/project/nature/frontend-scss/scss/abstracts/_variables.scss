@@ -9,6 +9,7 @@ $clr-black: #000;
 $clr-grey-light-1: #f7f7f7;
 $clr-grey-light-2: #eee;
 $clr-grey-dark: #777;
+$clr-grey-dark-2: #999;
 
 $rgba-charcoal: rgba(38, 70, 83, 1);
 $rgba-green: rgba(42, 157, 143, 1);
@@ -35,6 +36,9 @@ $card-1-gradient: linear-gradient(
 
 //FONT
 $default-font-size: 1.6rem;
+
+// border 
+$b-radius: 3px;
 
 // GRID
 $grid-width: 114rem;
