@@ -39,3 +39,33 @@
   padding: 15rem 0;
   position: relative;
 }
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    $orange-yellow-crayola,
+    $persian-green
+  );
+}
+
+.book {
+  background-image: linear-gradient(
+      105deg,
+      rgba($clr-white, 0.8) 0%,
+      rgba($clr-white, 0.8) 50%,
+      transparent 50%
+    ),
+    url("https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+
+  background-size: cover;
+  height: 50rem;
+  border-radius: $b-radius;
+  box-shadow: 0 1.5 4rem rgba($clr-black, 0.2);
+
+
+  &__form {
+    width: 50%;
+    padding: 6rem;
+  }
+}
